@@ -1,0 +1,51 @@
+.icon {
+  height: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  border-radius: 30px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(214, 211, 211);
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 8px;
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.right-section .middle-section {
+  margin-right: 15px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.middle-section .search-bar {
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(214, 211, 211, 0.5);
+  height: 20px;
+  width: 250px;
+  padding: 8px 0 8px 20px;
+  font-family: Roboto;
+  outline: none;
+}
+
+.left-section img:hover {
+  cursor: pointer;
+}

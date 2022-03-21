@@ -1,0 +1,67 @@
+.recommend-section {
+  padding-top: 15px;
+  position: fixed;
+  z-index: 0;
+  right: 190px;
+  bottom: 0;
+  top: 90px;
+}
+.personal-details .profile-pic {
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+
+.personal-details {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name-section {
+  margin-right: 15px;
+  flex: 1;
+}
+
+.profile-name-section .instagram-handle {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.profile-name-section .user-name {
+  font-size: 14px;
+  color: rgba(150, 149, 149);
+  margin-top: 2px;
+}
+
+.change-account {
+  color: rgba(27, 158, 245, 0.842);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Style Suggestions Title */
+.suggestions-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.suggestions-title {
+  color: rgba(116, 110, 110, 0.637);
+  font-weight: 700;
+}
+.see-all {
+  font-weight: 700;
+}
+
+.suggested-friends-wrapper {
+  margin-top: 20px;
+  padding-left: 8px;
+}
+
+.friend-profile-pic {
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
+}

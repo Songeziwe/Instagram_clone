@@ -1,0 +1,124 @@
+.feed-wrapper {
+  width: 640px;
+  margin-right: 20px;
+}
+
+.post {
+  border: 1px solid rgb(214, 211, 211);
+  margin-bottom: 25px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.top .left {
+  display: flex;
+}
+
+.top .left img {
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+
+.top .left p {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.top .left p:hover {
+  cursor: pointer;
+}
+
+.top img, .post-comment-wrapper img {
+  height: 20px;
+}
+
+.top img:hover {
+  cursor: pointer;
+}
+
+.middle {
+  width: 100%;
+}
+
+.middle img{
+  width: 100%;
+}
+
+.bottom .bottom-sub-section{
+  padding: 15px;
+} 
+
+.bottom .reaction-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reaction-section div img {
+  margin-right: 10px;
+}
+
+.reaction-section div img:hover, 
+.bottom .reaction-section img:hover,
+.likes:hover, .caption span:hover,
+.more-link:hover, .view-comments:hover, .post-time:hover {
+  cursor: pointer;
+}
+
+.bottom .reaction-section div img,  .bottom .reaction-section img{
+  height: 20px;
+}
+
+.bottom {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.likes, .caption span {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.more-link, .view-comments, .post-time  {
+  color: rgba(150, 149, 149, 0.719);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Style comment section at the bottom of Post*/
+.post-comment-wrapper {
+  display: flex;
+  border-top: 1px solid rgba(150, 149, 149, 0.719);
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.post-comment-wrapper input {
+  flex: 1;
+  margin-left: 8px;
+  border: none;
+  outline: none;
+  height: 50px;
+}
+
+.post-comment-wrapper p {
+  color: rgba(0, 148, 246, 0.288);
+  font-weight: 700;
+}
+
+.post-comment-wrapper img:hover,  .post-comment-wrapper p:hover{
+  cursor: pointer;
+}
+
+
