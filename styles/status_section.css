@@ -1,10 +1,11 @@
 .status-section {
   height: 100px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   margin-bottom: 25px;
   border: 1px solid rgb(214, 211, 211);
   border-radius: 2px;
   overflow: hidden;
+  z-index: -1;
 }
 
 .navigation-container {
@@ -35,4 +36,20 @@
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 0;
+}
+
+.next, .prev {
+   text-decoration: none; 
+} 
+
+.next img, .prev img {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.623);
+  color: transparent;
+  border-radius: 15px;
+}
+
+.next img {
+  transform: rotate(180deg);
 }

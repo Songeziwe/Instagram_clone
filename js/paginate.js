@@ -59,8 +59,13 @@ function change(page)
     }
     wrapper.innerHTML += `
               <div class="navigation-container">
-                <a href="javascript:prevPage()" class="prev">prev</a>
-                <a href="javascript:nextPage()" class="next">next</a>
+                <a href="javascript:prevPage()" class="prev">
+                  <img src="../icons/pagination_arrow.svg" alt="pagination_arrow"/>
+                </a>
+                <a href="javascript:nextPage()" class="next">
+                  <img src="../icons/pagination_arrow.svg" alt="pagination_arrow"/>
+                </a>
+                </div>
               </div>
     `;
 
