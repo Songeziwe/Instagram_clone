@@ -26,9 +26,20 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 25px;
+  border-radius: 40px;
   margin-left: 8px;
-  background-color: gray;
+  border-width: 2px;
+  padding: 6px;
+  background: linear-gradient(to right, 
+            rgb(252, 175, 69), rgb(247, 119, 55), rgb(245, 96, 64),rgb(253, 29, 29),
+            rgb(225, 48, 108), rgb(193, 53, 132), rgb(131, 58, 180), rgb(88, 81, 216),
+            rgb(64, 93, 230));
+}
+
+.item img {
+  height: 100%;
+  border-radius: inherit;
+  border: 4px solid white;
 }
 
 .status-items {
@@ -44,9 +55,8 @@
 } 
 
 .next img, .prev img {
-  height: 30px;
-  background-color: rgba(255, 255, 255, 0.623);
-  color: transparent;
+  height: 20px;
+  background-color: rgba(253, 253, 253, 0.801);
   border-radius: 15px;
 }
 

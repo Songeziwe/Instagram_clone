@@ -1,19 +1,17 @@
 const items = [
-  '<p class="item">Item1</p>', '<p class="item">Item2</p>',
-  '<p class="item">Item3</p>', '<p class="item">Item4</p>',
-  '<p class="item">Item5</p>', '<p class="item">Item6</p>',
-  '<p class="item">Item7</p>', '<p class="item">Item8</p>',
-  '<p class="item">Item9</p>', '<p class="item">Item10</p>',
-  '<p class="item">Item11</p>', '<p class="item">Item12</p>',
-  '<p class="item">Item13</p>', '<p class="item">Item14</p>',
-  '<p class="item">Item15</p>', '<p class="item">Item16</p>',
-  '<p class="item">Item17</p>', '<p class="item">Item18</p>',
-  '<p class="item">Item19</p>', '<p class="item">Item20</p>',
-  '<p class="item">Item21</p>', '<p class="item">Item22</p>',
+  `<div class="item"><img src="../profile_pics/profile_pic.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/theRock.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/50cent.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/nyovest.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/jlo.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/beauty.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/kim.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/royal.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/standardBank.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/xzit.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/googleSoc.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/dho.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/tedx.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/uctCareer.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/uctSoc.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/goodNews.jpg" alt="pic"/></div>`,
+  `<div class="item"><img src="../profile_pics/polo.jpg" alt="pic"/></div>`, `<div class="item"><img src="../profile_pics/kevin.jpg" alt="pic"/></div>`,
 ];
 
 var current_page = 1;
-var items_per_page = 11;
+var items_per_page = 9;
 
 function totNumPages()
 {
