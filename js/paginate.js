@@ -10,8 +10,61 @@ const items = [
   '<p class="item">Item17</p>', '<p class="item">Item18</p>',
   '<p class="item">Item19</p>', '<p class="item">Item20</p>',
   '<p class="item">Item21</p>', '<p class="item">Item22</p>',
-  '<p class="item">Item23</p>', '<p class="item">Item24</p>',
-  '<p class="item">Item25</p>', '<p class="item">Item26</p>',
-  '<p class="item">Item27</p>', '<p class="item">Item28</p>',
-
 ];
+
+var current_page = 1;
+var items_per_page = 11;
+
+function totNumPages()
+{
+    return Math.ceil(items.length / items_per_page);
+}
+
+function prevPage()
+{
+    if (current_page > 1) {
+        current_page--;
+        change(current_page);
+    }
+}
+function nextPage()
+{
+    if (current_page < totNumPages()) {
+        current_page++;
+        change(current_page);
+    }
+}
+function change(page)
+{
+    var btn_next = document.getElementsByClassName("next")[0];
+    var btn_prev = document.getElementsByClassName("prev")[0];
+    var wrapper = document.getElementsByClassName("status-items")[0];
+    
+    if (page < 1) page = 1;
+    if (page > totNumPages()) page = totNumPages();
+    wrapper.innerHTML = "";
+    for (var i = (page-1) * items_per_page; i < (page * items_per_page); i++) {
+        wrapper.innerHTML += items[i];
+    }
+
+    if (page == 1) {
+        btn_prev.style.visibility = "hidden";
+    } else {
+        btn_prev.style.visibility = "visible";
+    }
+    if (page == totNumPages()) {
+        btn_next.style.visibility = "hidden";
+    } else {
+        btn_next.style.visibility = "visible";
+    }
+    wrapper.innerHTML += `
+              <div class="navigation-container">
+                <a href="javascript:prevPage()" class="prev">prev</a>
+                <a href="javascript:nextPage()" class="next">next</a>
+              </div>
+    `;
+
+}
+window.onload = function() {
+    change(current_page);
+};
